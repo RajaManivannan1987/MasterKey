@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/resourceDialogHeadingTextView"
+        android:gravity="center"
+        android:text="Heading"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <View android:layout_height="10dp" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Periodicity" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="2dp" />
+
+        <EditText
+            android:id="@+id/resourceDialogPeriodicityEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/payout_edit_text"
+            android:layout_weight="1"
+            android:background="@color/color_light_grey"
+            android:hint="Enter periodicity"
+            android:inputType="number"
+            android:lines="1"
+            android:paddingLeft="5dp"
+            android:paddingStart="5dp" />
+
+    </TableRow>
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="10dp" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Serviced Date" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="2dp" />
+
+        <TextView
+            android:id="@+id/resourceDialogDateTextView"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/transaction_payment_edit_text"
+            android:layout_weight="1"
+            android:background="@color/color_light_grey"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="date" />
+
+    </TableRow>
+
+    <View android:layout_height="10dp" />
+
+    <LinearLayout android:gravity="center">
+
+        <Button
+            android:id="@+id/resourceDialogSubmitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Save"
+            android:textColor="@android:color/white"
+            android:background="@drawable/login_button_background" />
+    </LinearLayout>
+
+
+</TableLayout>

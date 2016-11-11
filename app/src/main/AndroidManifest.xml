@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.imaginetventures.masterkey">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".applicationClasses.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activityClasses.SplashActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activityClasses.LoginActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activityClasses.TransactionListActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activityClasses.EmployeeListActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activityClasses.TransactionDetailActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activityClasses.TransactionCompletedActivity"
+            android:screenOrientation="sensorPortrait" />
+
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".activityClasses.PayOutTypeActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activityClasses.PayRollActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activityClasses.PayRollDetailActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activityClasses.AddLeadActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activityClasses.TransactionPaymentActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activityClasses.AccountSearchResultActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activityClasses.RecordExpenseActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activityClasses.DashboardActivity"
+            android:screenOrientation="sensorPortrait">
+
+        </activity>
+        <activity android:name=".activityClasses.AddingLeadActivity" />
+        <activity android:name=".activityClasses.ResourceActivity"></activity>
+    </application>
+
+</manifest>

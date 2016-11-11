@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4BC6C2</color>
+    <color name="colorPrimaryDark">#2F8181</color>
+    <color name="colorAccent">#ebebeb</color>
+
+    <color name="color_light_grey">#ebebeb</color>
+    <color name="text_color_light_black">#393939</color>
+    <color name="status_color_background">#d0ad50</color>
+    <color name="dark_grey">#696969</color>
+    <color name="pending">#88C5D7</color>
+    <color name="completed">#62D82E</color>
+
+
+</resources>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_light_grey"
+    android:orientation="vertical"
+    tools:context="com.imaginetventures.masterkey.activityClasses.AddingLeadActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:contentInsetLeft="0dp"
+        android:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/click_image_view_background"
+                android:padding="10dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Add Lead"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/settings"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Mobile\nNumber" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="1dp" />
+
+                <EditText
+                    android:id="@+id/addingLeadActivityCustomerMobileNumberEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/transaction_payment_edit_text"
+                    android:layout_weight="1"
+                    android:background="@color/color_light_grey"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Name" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="1dp" />
+
+                <EditText
+                    android:id="@+id/addingLeadActivityCustomerNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/transaction_payment_edit_text"
+                    android:layout_weight="1"
+                    android:background="@color/color_light_grey"
+                    android:inputType="text"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Area" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="1dp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/addingLeadActivityAreaEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/transaction_payment_edit_text"
+                    android:layout_weight="1"
+                    android:background="@color/color_light_grey"
+                    android:inputType="text"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date of Enquiry" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="1dp" />
+
+                <TextView
+                    android:id="@+id/addingLeadActivityDateOfEnquiryTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/transaction_payment_edit_text"
+                    android:layout_weight="1"
+                    android:background="@color/color_light_grey"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:text="date" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nature of Enquiry" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="1dp" />
+
+                <com.imaginetventures.masterkey.utils.MultiSelectionSpinner
+                    android:id="@+id/addingLeadActivityNatureOfEnquirySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/transaction_payment_edit_text"
+                    android:layout_weight="1"
+                    android:background="@color/color_light_grey"
+                    android:gravity="center_vertical" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Source of Lead" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="1dp" />
+
+                <Spinner
+                    android:id="@+id/addingLeadActivitySourceOfLeadSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/transaction_payment_edit_text"
+                    android:layout_weight="1"
+                    android:background="@color/color_light_grey"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/source_lead"
+                    android:gravity="center_vertical"
+                    android:spinnerMode="dialog" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Note on the call" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="1dp" />
+
+                <EditText
+                    android:id="@+id/addingLeadActivityNoteOnTheCallEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/color_light_grey"
+                    android:drawSelectorOnTop="true"
+                    android:gravity="center_vertical"
+                    android:minLines="3"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Follow up Date" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="1dp" />
+
+                <TextView
+                    android:id="@+id/addingLeadActivityFollowUpDateTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/transaction_payment_edit_text"
+                    android:layout_weight="1"
+                    android:background="@color/color_light_grey"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:text="" />
+            </TableRow>
+
+            <Button
+                android:id="@+id/addingLeadActivitySubmitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/service_background"
+                android:text="Submit"
+                android:textColor="@android:color/white" />
+
+        </TableLayout>
+
+    </ScrollView>
+</LinearLayout>

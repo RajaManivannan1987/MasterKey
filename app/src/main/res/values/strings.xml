@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">MasterKey</string>
+    <string-array name="deposit_type">
+        <item>Select Payment Type</item>
+        <item>Cash</item>
+        <item>Cheque</item>
+    </string-array>
+    <string-array name="menu_list">
+        <item>Transaction</item>
+        <item>Payout</item>
+        <item>Payroll</item>
+        <item>Logout</item>
+    </string-array>
+    <string-array name="source_lead_id">
+        <item></item>
+        <item>Quikr_Paid_Leads</item>
+        <item>Quikr_Ad_Listing</item>
+        <item>Just_Dial</item>
+        <item>Sulekha</item>
+        <item>Officium</item>
+        <item>Urban_cap</item>
+        <item>Referral</item>
+        <item>Gift_Voucher</item>
+        <item>1+1_offer</item>
+        <item>Intermediary_Refferal</item>
+        <item>Friend/Relative_of_Staff</item>
+        <item>Direct_Inbound_Call</item>
+        <item>others</item>
+    </string-array>
+    <string-array name="source_lead">
+        <item>Select source</item>
+        <item>Quikr Paid Leads</item>
+        <item>Quikr Ad Leads</item>
+        <item>Just Dial</item>
+        <item>Sulekha</item>
+        <item>Officium</item>
+        <item>Urban cap</item>
+        <item>Referral</item>
+        <item>Gift Voucher</item>
+        <item>1+1 offer</item>
+        <item>Intermediary Refferal</item>
+        <item>Friend/Relative of Staff</item>
+        <item>Direct Inbound Call</item>
+        <item>Others</item>
+    </string-array>
+</resources>
